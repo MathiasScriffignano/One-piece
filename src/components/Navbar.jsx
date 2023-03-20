@@ -4,6 +4,9 @@ const Navbar = () => {
   return (
     <div>
         <Link className='text-orange text-red-600' to='/'>Accueil</Link>
+        <Link to='/luffy'>Luffy</Link>
+        <Link to='/zorro'>Zorro</Link>
+        <Link to='/chopper'>Chopper</Link>
     </div>
   )
 }
