@@ -13,30 +13,31 @@ const Sunny = () => {
     <div className='backgr w-screen h-screen  ' >
       <div className='container relative'>
           <div className='absolute left-[80%] translate-y-[210%] '>
-            <img className='reflet w-[15em]' src={Boat} alt="" />
+            <img className='reflet xl:w-[15em] md:w-[0em]' src={Boat} alt="" />
           </div>
         </div>
+
       <div className='container relative'>
-          <div className='absolute left-[70%] translate-y-[20%] z-5'>
-            <img className='w-[28em] boat ' src={Boat} alt="" />
+          <div className='absolute left-[70%] xl:translate-y-[20%] md:translate-y-[50%]'>
+            <img className='xl:w-[28em] md:w-[15em] boat ' src={Boat} alt="" />
           </div>
         </div>
         
        <div className='container relative'>
           <div className='absolute left-[10%] translate-y-[100%] '>
-            <img className='w-[15em] ' src={Soleil} alt="" />
+            <img className='xl:w-[15em] md:w-[5em] ' src={Soleil} alt="" />
           </div>
         </div>
 
        <div className='container '>
-          <div className='absolute  top-96 left-[10%] z-10 nuage'>
-            <img className=' w-[10em]' src={Nuage} alt="" />
+          <div className='absolute  xl:top-96 md:top-80 left-[10%] z-10 nuage'>
+            <img className=' xl:w-[10em] md:w-[5em]' src={Nuage} alt="" />
           </div>
         </div>
 
        <div className='container '>
-          <div className='absolute  top-80 left-[40%] '>
-            <img className='w-[15em] ' src={Nuage} alt="" />
+          <div className='absolute  xl:top-80 md:top-60 left-[40%] '>
+            <img className='xl:w-[10em] md:w-[6em] ' src={Nuage} alt="" />
           </div>
         </div>
 
