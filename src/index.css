@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .nuage{
-	animation: move 30s infinite;
+	animation: move 230s infinite;
 }
 @keyframes move {
 	0% {
