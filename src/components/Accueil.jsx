@@ -4,11 +4,13 @@ import React, { useEffect, useState } from 'react';
 function WelcomeMessage({ name, onLogoutClick }) {
   return (
     <div>
-      <p className="text-3xl text-orange-900 mt-7 ">
+      <p className="text-3xl text-gray-900 mt-7 ">
         Bonjour, {name}! Bienvenue à bord du Sunny, nous sommes heureux de te
         voir faire partie de l'équipage des Mugiwara
       </p>
-      <button className='mt-9 text-md border-orange-500 border-2 hover:bg-slate-500' onClick={onLogoutClick}>descendre de bord</button>
+      <div className='flex justify-center'>
+      <button className='mt-9 text-md border-orange-500 border-2 hover:bg-slate-500 ' onClick={onLogoutClick}>descendre de bord</button>
+      </div>
     </div>
   );
 }
@@ -34,7 +36,7 @@ function Nameform({ onNameSubmit, onHide, show }) {
   // Modal
   return (
     <div
-      className="fixed top-0 left-0 h-screen w-full flex items-center justify-center"
+      className="fixed top-0 left-0 h-screen w-full flex items-center justify-center z-50"
      
     >
       <div className="bg-white rounded shadow p-8 w-full max-w-md">

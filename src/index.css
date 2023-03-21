@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.backgr{
+    background-image: url(./assets/horizon.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.boat{
+    animation: boat 3s linear infinite;
+}
+@keyframes boat{
+	0%{
+		transform: rotate(0);
+	}
+
+	50%{
+		transform: rotate(-3deg);
+	}
+
+	100%{
+		transform: rotate(0);
+	}
+}
