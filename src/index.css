@@ -2,11 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.backgr{
-    background-image: url(./assets/horizon.png);
-    background-size:cover;
-    background-repeat: no-repeat;
+.nuage{
+	animation: move 230s infinite;
 }
+@keyframes move {
+	0% {
+	  left: 0;
+	}
+	50% {
+	  left: calc(100% - 50px);
+	}
+	100% {
+	  left: 0;
+	}
+  }
+
+  .reflet{
+
+	content: "";
+	opacity: 0.3;
+	transform: scaleY(-1);
+
+  }
+
 
 .boat{
     animation: boat 3s linear infinite;

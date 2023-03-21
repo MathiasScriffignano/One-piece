@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 function WelcomeMessage({ name, onLogoutClick }) {
   return (
     <div>
-      <p className="text-3xl text-gray-900 mt-7 ">
+      <p className="text-3xl text-gray-900 mt-7">
         Bonjour, {name}! Bienvenue à bord du Sunny, nous sommes heureux de te
         voir faire partie de l'équipage des Mugiwara
       </p>
