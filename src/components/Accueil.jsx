@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-
+// Fonction message d'accueil qui retourne le nom et pour se déco
 function WelcomeMessage({ name, onLogoutClick }) {
   return (
     <div>
@@ -13,19 +13,25 @@ function WelcomeMessage({ name, onLogoutClick }) {
   );
 }
 
+// enregistrement en local du prenom
 function Nameform({ onNameSubmit, onHide, show }) {
+// Hoojk pour contenir la valeur d'état
   const [name, setName] = useState(localStorage.getItem("name") || "");
 
+
+  // enregistre le nom et empeche le raffraichissement de la page pour perdre la valeur
   function handleSubmit(event) {
     event.preventDefault();
     onNameSubmit(name);
     localStorage.setItem("name", name);
   }
 
+  // supprime l'ancienne valeur 
   function handleNameChange(event) {
     setName(event.target.value);
   }
 
+  // Modal
   return (
     <div
       className="fixed top-0 left-0 h-screen w-full flex items-center justify-center"
@@ -68,9 +74,12 @@ function Nameform({ onNameSubmit, onHide, show }) {
 }
 
 const Accueil = () => {
+  // Hook pour verif la valeur de name 
   const [name, setName] = useState(localStorage.getItem("name") || "");
+  // Hook qui vérifie si l'utilisateur a entré le nom pour afficher la modal
   const [showModal, setShowModal] = useState(!name);
 
+  // Si la valeur est remplis n'affiche pas la modal affiche le message sinon la modal reste afficher 
   function handleNameSubmit(name) {
     setName(name);
     setShowModal(false);
