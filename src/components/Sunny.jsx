@@ -1,7 +1,7 @@
 import React from 'react'
 import Accueil from './Accueil'
 import Boat from '../assets/sunny.png'
-import Vague from '../assets/vague.png'
+
 import Soleil from '../assets/soleil.png'
 import Nuage from '../assets/nuage.png'
 import Hori from '../assets/horizon.png'
@@ -13,7 +13,7 @@ const Sunny = () => {
     <div className='backgr w-screen h-screen  ' >
       <div className='container relative'>
           <div className='absolute left-[80%] translate-y-[210%] '>
-            <img className='reflet xl:w-[15em] md:w-[0em]' src={Boat} alt="" />
+            <img className='reflet xl:w-[15em]  lg:w-[0em]' src={Boat} alt="" />
           </div>
         </div>
 
