@@ -1,4 +1,6 @@
 import Eastblue from "./composant/Eastblue";
+import { Parallax } from 'react-parallax';
+
 
 function Luffy() {
   return (

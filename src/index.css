@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.fondnight{
+	background-image: url(./assets/fondnuit.jpg);
+	background-size: cover;
+}
+
 .lienmen{
 	text-decoration: none;
 	background: linear-gradient(to top, rgba(0, 225, 255, 0.5) 0%, rgba(0, 208, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
