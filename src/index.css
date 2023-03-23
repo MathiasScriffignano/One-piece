@@ -62,7 +62,14 @@
     background: linear-gradient(
 		rgba(0, 0, 0, 0.45), 
 		rgba(122, 27, 27, 0.401)
-		),url(./assets/fond-ep.jpg);
+		);
 
 background-size: cover;
+}
+
+.custom-bg::after{
+	content: '';
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
 }
