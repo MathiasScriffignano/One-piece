@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+body{
+	margin: 0;
+	padding: 0;
+}
+
 .fondnight{
 	background-image: url(./assets/fondnuit.jpg);
 	background-size: cover;
@@ -73,3 +78,29 @@ background-size: cover;
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
 }
+
+.fondNews{
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.45), 
+		rgba(122, 27, 27, 0.401)
+		);
+}
+
+@media (max-width: 800px) {
+	.soleil {
+	  display: none;
+	}
+	.nuage, .nuage1, .reflet,{
+		display: none;
+	  }
+
+	  .boat{
+		display: none;
+	  }
+
+	  .textwelco{
+		display: flex;
+		flex-direction: column;
+		gap: 10em;
+	  }
+  }

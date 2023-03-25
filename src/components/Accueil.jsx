@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 // Fonction message d'accueil qui retourne le nom et pour se déco
 function WelcomeMessage({ name, onLogoutClick }) {
   return (
-    <div>
-      <p className="text-3xl text-gray-900 mt-7">
+    <div className='textwelco w-full h-screen'>
+      <p className="text-3xl text-gray-900 mt-7 ">
         Bonjour, {name}! Bienvenue à bord du Sunny, nous sommes heureux de te
         voir faire partie de l'équipage des Mugiwara
       </p>
@@ -45,7 +45,7 @@ function Nameform({ onNameSubmit, onHide, show }) {
   // Modal
   return (
     <div
-      className="fixed top-0 left-0 h-screen w-full flex items-center justify-center z-50"
+      className="fixed w-full flex items-center justify-center z-50"
      
     >
       <div className="bg-white rounded shadow p-8 w-full max-w-md">
@@ -63,14 +63,8 @@ function Nameform({ onNameSubmit, onHide, show }) {
               onChange={handleNameChange}
             />
           </div>
-          <div className="flex items-center justify-between">
-            <button
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button"
-              onClick={onHide}
-            >
-              Annuler
-            </button>
+          <div className="flex items-center justify-center">
+           
             <button
               className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"

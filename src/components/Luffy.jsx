@@ -18,6 +18,7 @@ function Luffy() {
         
           </div>  
       </Parallax>
+      
         <Eastblue />
         <Albasta />
         <Celeste />
