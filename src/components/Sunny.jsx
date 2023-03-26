@@ -8,7 +8,7 @@ import Hori from '../assets/horizon.png'
 
 const Sunny = () => {
   return (
-    <div className='backgr w-screen h-screen  ' >
+    <div className='backgr w-screen h-screen sm:w-full sm:h-full ' >
       
 
       <div className='container relative bateau'>

@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+iframe{
+	display: none;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -90,7 +92,7 @@ background-size: cover;
 	.soleil {
 	  display: none;
 	}
-	.nuage, .nuage1, .reflet,{
+	.nuage, .nuage1, .reflet{
 		display: none;
 	  }
 

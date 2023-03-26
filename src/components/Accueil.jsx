@@ -45,10 +45,10 @@ function Nameform({ onNameSubmit, onHide, show }) {
   // Modal
   return (
     <div
-      className="fixed w-full flex items-center justify-center z-50"
+      className="w-full z-50 sm:w-96"
      
     >
-      <div className="bg-white rounded shadow p-8 w-full max-w-md">
+      <div className="bg-white rounded shadow p-8 w-full max-w-md ">
         <h2 className="text-2xl font-bold mb-4">Ton nom de pirate</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -97,7 +97,7 @@ const Accueil = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container flex justify-center mt-10">
       {!name ? (
         <Nameform onNameSubmit={handleNameSubmit} onHide={() => {}} show={showModal} />
       ) : (
